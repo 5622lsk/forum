@@ -1,5 +1,5 @@
-import { connectDB } from "@/util/database.js";
-// import { ObjectId } from "mongodb";
+import { ObjectId } from "mongodb";
+import { connectDB } from "../../../../util/database";
 
 export default async function Detail(props) {
   let db = (await connectDB).db("next-study");

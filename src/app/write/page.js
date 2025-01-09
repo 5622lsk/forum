@@ -11,6 +11,11 @@ export default async function Write() {
       <form action="/api/post/new" method="POST">
         <input name="title" placeholder="글제목" />
         <input name="content" placeholder="글내용" />
+        <input
+          style={{ display: "none" }}
+          name="_id"
+          defaultValue={result._id.toString()}
+        />
         <button type="submit">저장</button>
       </form>
     </div>
